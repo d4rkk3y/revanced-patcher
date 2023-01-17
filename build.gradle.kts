@@ -18,13 +18,20 @@ repositories {
             password = githubPassword
         }
     }
+    maven {
+        url = uri("https://maven.pkg.github.com/d4rkk3y/Apktool")
+        credentials {
+            username = githubUsername
+            password = githubPassword
+        }
+    }
 }
 
 dependencies {
     implementation("xpp3:xpp3:1.1.4c")
-    implementation("org.smali:smali:2.5.2")
-    implementation("app.revanced:multidexlib2:2.5.3-8649b642")
-    implementation("org.apktool:apktool-lib:2.9.0-SNAPSHOT")
+    implementation("app.revanced:smali:2.5.3-a3836654")
+    implementation("app.revanced:multidexlib2:2.5.3-a3836654")
+    implementation("app.revanced:apktool-lib:2.9.0-SNAPSHOT")
 
     implementation(kotlin("reflect"))
     testImplementation(kotlin("test"))
@@ -51,7 +58,7 @@ publishing {
         if (System.getenv("GITHUB_ACTOR") != null)
             maven {
                 name = "GitHubPackages"
-                url = uri("https://maven.pkg.github.com/revanced/revanced-patcher")
+                url = uri("https://maven.pkg.github.com/d4rkk3y/revanced-patcher")
                 credentials {
                     username = System.getenv("GITHUB_ACTOR")
                     password = System.getenv("GITHUB_TOKEN")
