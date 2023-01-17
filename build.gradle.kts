@@ -18,6 +18,13 @@ repositories {
             password = githubPassword
         }
     }
+    maven {
+        url = uri("https://maven.pkg.github.com/d4rkk3y/Apktool")
+        credentials {
+            username = githubUsername
+            password = githubPassword
+        }
+    }
 }
 
 dependencies {
@@ -51,7 +58,7 @@ publishing {
         if (System.getenv("GITHUB_ACTOR") != null)
             maven {
                 name = "GitHubPackages"
-                url = uri("https://maven.pkg.github.com/revanced/revanced-patcher")
+                url = uri("https://maven.pkg.github.com/d4rkk3y/revanced-patcher")
                 credentials {
                     username = System.getenv("GITHUB_ACTOR")
                     password = System.getenv("GITHUB_TOKEN")
