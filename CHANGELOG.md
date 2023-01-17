@@ -1,3 +1,11 @@
+## [6.4.2](https://github.com/d4rkk3y/revanced-patcher/compare/v6.4.1...v6.4.2) (2023-01-17)
+
+
+### Bug Fixes
+
+* add missing dependencies and test release in fork ([57c4cf0](https://github.com/d4rkk3y/revanced-patcher/commit/57c4cf090c76a98eb9ed4c1d87ba65c91100da63))
+* resolve failing builds ([a263fdf](https://github.com/d4rkk3y/revanced-patcher/commit/a263fdfd413fc05098e28d4800e36ce7d313085b))
+
 ## [6.4.2-dev.1](https://github.com/d4rkk3y/revanced-patcher/compare/v6.4.1...v6.4.2-dev.1) (2023-01-17)
 
 
